@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+</head>
+<body>
+  <div style="width: 300px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 4px; background-color: #f5f5f5;">
+    <h2 style="text-align: center;">Login</h2>
+    <form (ngSubmit)="login()" style="margin-top: 20px;">
+      <div style="margin-bottom: 15px;">
+        <label for="username" style="display: block; margin-bottom: 5px;">Username</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" style="width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+      <div style="margin-bottom: 15px;">
+        <label for="password" style="display: block; margin-bottom: 5px;">Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" style="width: 100%; padding: 8px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+      <button type="submit" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Login</button>
+    </form>
+  </div>
+</body>
+</html>
